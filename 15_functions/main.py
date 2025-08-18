@@ -31,4 +31,9 @@ greetUser("Ali")
 # function to crete the sum oif two numbers
 
 def sum(num1 , num2):
-print(f"The sum is: {sum_result}")
+   sum_result = num1 + num2
+   print(f"The sum is: {sum_result}")
+
+sum(109,12)
+sum(1882,1393)
+sum(18329382,1382932893)
