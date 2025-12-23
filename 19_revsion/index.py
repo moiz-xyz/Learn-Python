@@ -93,3 +93,66 @@ users.pop()
 print("pop ki howi list" , users)
 
 print(users[1:5])
+
+
+
+
+tuples
+
+name = "moiz"
+cordiaates = (12.123 , 77.321 , "adeena")
+print(cordiaates)
+
+bacha_ka_record = ( 1,"zehrilly" , 3.0 ,True )
+print(bacha_ka_record[0])
+
+
+t = (1, 2, 2, 3, 3, 4, 1, 1, 1)
+print(t.count(1))   
+print(t.index(1))   
+
+
+student_record = ["adeene amjad" ,"moiz" , "mahrukh" , "zaraksha" " mahreen"]
+student_record = {
+    "name": "adeena amjad",
+    "father_name": "amjad",
+    "age": 21,
+    "is_student": True
+}
+print(student_record["father_name"])
+
+student_record["age"] = 22
+print(student_record.get("age"))
+
+del student_record["is_student"]
+print(student_record)
+
+
+# userImput
+
+name = input("enter your name:")
+print("Hello " + name)
+
+marks = input("Enter your marks in islamiyat")
+print(name, "your marks in islamiyat is " , marks)
+
+# marksheet 
+name = input("What is your name? ")
+english_marks = int(input("Enter your marks in English: "))
+math_marks = int(input("Enter your marks in Math: "))
+pst_marks = int(input("Enter your marks in PST: "))
+islamiyat_marks = int(input("Enter your marks in Islamiyat: "))
+
+total_marks = 400
+obtained_marks = english_marks + math_marks + pst_marks + islamiyat_marks 
+percentage = (obtained_marks / total_marks) * 100
+
+print("Marksheet for", name)
+print("Total Marks:", total_marks)
+print("Obtained Marks:", obtained_marks)
+print("Percentage:", percentage, "%")
+print("Marks breakdown:")
+print("English:", english_marks)
+print("Math:", math_marks)
+print("PST:", pst_marks)
+print("Islamiyat:", islamiyat_marks)
